@@ -4,11 +4,11 @@ import Dashboard from './dashboard/dashboard';
 
 const MainLayout: React.FC = () => {
   return (
-    <div style={{ display: 'flex', height: '1024px', width: '100%', margin: 0, padding: 0 }}>
+    <div style={{ display: 'flex', height: '100%', width: '100%', margin: 0, padding: 0 }}>
       <div
         style={{
           width: '230px',
-          height: '1024px',
+          height: '1210px',
           borderRight: '1px solid #DEDEDF',
           backgroundColor: '#002F6C',
           padding: 0,

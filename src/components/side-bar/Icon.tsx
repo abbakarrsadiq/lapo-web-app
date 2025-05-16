@@ -14,7 +14,20 @@ import unblockCardIcon from '../../assets/unblockCardIcon.svg';
 import userGroup from '../../assets/userGroup.svg';
 import userIcon from '../../assets/userIcon.svg';
 import poweredByIcon from '../../assets/poweredByIcon.svg';
-
+import notificationIcon from '../../assets/notificationIcon.svg';
+import avatarIcon from '../../assets/avatarIcon.svg';
+import calendarIcon from '../../assets/calendarIcon.svg';
+import rightIcon from '../../assets/checvronRightIcon.svg';
+import issueCardIcon from '../../assets/issueCardIcon.svg';
+import manageCardIcon from '../../assets/manageCardIcon.svg';
+import reviewCardRequestIcon from '../../assets/reviewCardRequestIcon.svg';
+import issuePersonalizedCardIcon from '../../assets/issuePersonalizedIcon.svg';
+import arrowUpIcon from '../../assets/arrowUpIcon.svg';
+import attentionIcon from '../../assets/attentionIcon.svg';
+import bankNoteIcon from '../../assets/bankNoteIcon.png';
+import pendingIcon from '../../assets/pendingIcon.png';
+import creditCardCheck from '../../assets/credit-card-check.svg';
+import creditCardEdit from '../../assets/credit-card-edit.svg';
 const icons = {
   authorisationIcon,
   branchesIcon,
@@ -31,7 +44,21 @@ const icons = {
   blockUnblock: unblockCardIcon,
   userGroup,
   userIcon,
-  poweredByIcon
+  poweredByIcon,
+  notificationIcon,
+  avatarIcon,
+  calendarIcon,
+  rightIcon,
+  issueCardIcon,
+  manageCardIcon,
+  reviewCardRequestIcon,
+  issuePersonalizedCardIcon,
+  arrowUpIcon,
+  attentionIcon,
+  bankNoteIcon,
+  pendingIcon,
+  creditCardCheck,
+  creditCardEdit
 };
 
 const Icon = ({ name, color = '#B0B7C3', size = 16 }) => {

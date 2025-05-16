@@ -19,24 +19,77 @@ const menuItems = [
 
 const SideBar = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', backgroundColor: '#003087', color: '#FFFFFF', fontFamily: 'Arial, sans-serif', padding: 0 }}>
-
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+        backgroundColor: '#FFFFFF',
+        color: 'rgba(0, 0, 0, 0.5)',
+        fontFamily: 'Arial, sans-serif',
+        padding: 0,
+      }}
+    >
       <div style={{ padding: '20px', textAlign: 'center' }}>
         <img src={logo} alt="LAPO Logo" style={{ width: '120px' }} />
       </div>
 
       <div style={{ padding: '10px 20px' }}>
-        <button style={{ width: '100%', padding: '12px', background: '#E4F0FF', color: '#003087', border: 'none', borderRadius: '6px', fontFamily: 'Satoshi', fontWeight: '500', fontSize: '12px', lineHeight: '18px', letterSpacing: '0%', display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', transition: 'background-color 0.3s' }}>
+        <button
+          style={{
+            width: '100%',
+            padding: '12px',
+            background: '#E4F0FF',
+            color: '#003087',
+            border: 'none',
+            borderRadius: '6px',
+            fontFamily: 'Satoshi',
+            fontWeight: '500',
+            fontSize: '12px',
+            lineHeight: '18px',
+            letterSpacing: '0%',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '12px',
+            cursor: 'pointer',
+            transition: 'background-color 0.3s',
+          }}
+        >
           <Icon name="dashboard" color="#003087" />
           Dashboard
         </button>
       </div>
 
       <div style={{ padding: '20px 0', flex: 1 }}>
-        <div style={{ padding: '0 20px', color: '#B0B7C3', fontSize: '12px', fontWeight: '600', textTransform: 'uppercase', marginBottom: '15px' }}>Main Menu</div>
+        <div
+          style={{
+            padding: '0 20px',
+            color: '#B0B7C3',
+            fontSize: '12px',
+            fontWeight: '600',
+            textTransform: 'uppercase',
+            marginBottom: '15px',
+          }}
+        >
+          Main Menu
+        </div>
         <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
           {menuItems.map((item, index) => (
-            <li key={index} style={{ padding: '12px 20px', fontFamily: 'Satoshi', fontWeight: '400', fontSize: '12px', lineHeight: '18px', letterSpacing: '0%', display: 'flex', alignItems: 'center', gap: '12px', transition: 'color 0.3s' }}>
+            <li
+              key={index}
+              style={{
+                padding: '12px 20px',
+                fontFamily: 'Satoshi',
+                fontWeight: '400',
+                fontSize: '12px',
+                lineHeight: '18px',
+                letterSpacing: '0%',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '12px',
+                transition: 'color 0.3s',
+              }}
+            >
               <Icon name={item.icon} />
               {item.name}
             </li>
@@ -44,17 +97,42 @@ const SideBar = () => {
         </ul>
       </div>
 
-      <div>
-        <button style={{ width: '100%', padding: '12px 20px', backgroundColor: 'transparent', color: '#FFFFFF', border: 'none', fontSize: '14px', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', transition: 'color 0.3s' }}>
-          <Icon name="logoutIcon" color="#FFFFFF" />
+      <div style={{ marginTop: 'auto', padding: '0 20px 20px', bottom: '0' }}>
+        <button
+          style={{
+            width: '100%',
+            padding: '12px 0',
+            marginBottom: '40px',
+            backgroundColor: 'transparent',
+            color: '#121212',
+            border: 'none',
+            fontSize: '14px',
+            fontWeight: '500',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '12px',
+            cursor: 'pointer',
+            transition: 'color 0.3s',
+          }}
+        >
+          <Icon name="logoutIcon" color="#121212" />
           Logout
         </button>
-      </div>
 
-      <div style={{ padding: '20px', textAlign: 'left', color: '#B0B7C3', fontSize: '12px' }}>
-        Powered by
-        <div>
-          <Icon name="poweredByIcon" color="#003087" size={42} style={{ width: '93.33332824707031px', height: '42px', position: 'relative', top: '10px', left: '0px' }} />
+        <div
+          style={{
+            textAlign: 'left',
+            color: '#B0B7C3',
+            fontSize: '12px',
+          }}
+        >
+          Powered by
+          <div>
+            <Icon
+              name="poweredByIcon"
+              size={100}
+            />
+          </div>
         </div>
       </div>
     </div>
