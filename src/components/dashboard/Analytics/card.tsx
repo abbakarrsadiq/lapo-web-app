@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = ({ icon, title, value, percentage, trendText, 
                 {percentage}
               </p>
             ) : (
-              <Icon name={trendText === "Requires attention" ? "attentionIcon" : "arrowUpIcon"} style={{ color: trendText === 'Requires attention' ? '#E78020' : 'rgba(0, 0, 0, 0.56)' }} />
+              <Icon name={trendText === "Requires attention" ? "attentionIcon" : "arrowUpIcon"}/>
             )}
             <p style={{ fontWeight: '400', fontSize: '12px', lineHeight: '18px', marginLeft: '4px', color: trendText === 'Requires attention' ? '#E78020' : 'rgba(0, 0, 0, 0.56)' }}>
               {trendText}
