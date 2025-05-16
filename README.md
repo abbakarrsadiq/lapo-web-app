@@ -1,54 +1,73 @@
-# React + TypeScript + Vite
+LAPO Web App
+A modern React-based dashboard application for managing card issuance and analytics, built with TypeScript, Tailwind CSS, Chart.js, and Vite. This project serves as a take-home assignment to demonstrate advanced React expertise and responsive design.
+Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interactive dashboard with quick access buttons.
+Real-time analytics using bar and doughnut charts.
+Card request management with status tracking.
+Responsive design using Tailwind CSS.
 
-Currently, two official plugins are available:
+Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React: Frontend library for building the UI (v19.1.0).
+TypeScript: For type-safe JavaScript (v5.8.3).
+Tailwind CSS: Utility-first CSS framework for styling (v4.1.7).
+Chart.js: For creating interactive bar and doughnut charts (v4.4.9).
+Vite: Fast build tool and development server (v6.3.5).
 
-## Expanding the ESLint configuration
+Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Node.js (v22.15.1 or higher)
+npm (v10.9.2 or higher)
+Git
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Clone the repository:
+git clone https://github.com/your-username/lapo-web-app.git
+cd lapo-web-app
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Install dependencies:
+npm install
+
+
+Start the development server:
+npm run dev
+
+Open http://localhost:5173 in your browser to view the app.
+
+
+Usage
+
+Use the quick access buttons to navigate dashboard functionalities.
+View analytics for card issuance and revenue.
+Manage card requests and check their status.
+
+Scripts
+
+npm run dev: Starts the development server.
+npm run build: Builds the app for production.
+npm run lint: Runs ESLint for code quality.
+npm run preview: Previews the production build.
+
+Project Structure
+lapo-web-app/
+├── src/              # Source files
+│   ├── components/   # Reusable React components
+│   ├── index.css     # Tailwind CSS styles
+│   └── main.tsx      # Entry point
+├── tailwind.config.js # Tailwind configuration
+├── postcss.config.js  # PostCSS configuration
+├── package.json      # Project dependencies and scripts
+└── README.md         # This file
+
+Contributing
+Feel free to fork this repository, submit issues, or create pull requests for improvements.
+License
+This project is for personal use and evaluation purposes only. No formal license is applied.
+Acknowledgments
+
+Built with guidance from xAI's Grok 3.
+Inspired by the LAPO Web App design from Figma prototype.
+
