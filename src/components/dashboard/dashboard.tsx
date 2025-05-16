@@ -1,11 +1,16 @@
-import Icon from '../side-bar/Icon';
+import Icon, { type IconName } from '../side-bar/Icon';
 import QuickAccess from './quick-access';
 import Analytics from './Analytics/analytics';
 
+interface QuickAccessItem {
+  label: string;
+  icon: IconName;
+  badge?: number;
+}
 const Dashboard: React.FC = () => {
   const userName = 'Nazeer';
   const lastLogin = '26/11/2024 14:39:58';
-  const quickAccessItems = [
+  const quickAccessItems: QuickAccessItem[] = [
     { label: 'Manage a Card', icon: 'manageCardIcon' },
     { label: 'Issue Instant Card', icon: 'issueCardIcon' },
     { label: 'Issue Personalized Card', icon: 'issuePersonalizedCardIcon' },

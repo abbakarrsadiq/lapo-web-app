@@ -4,6 +4,7 @@ import MonthlyIssuanceChart from './monthly-issuance-chart';
 import RecentCardRequestsTable from './recent-card-requests';
 import WeeklyIncomeChart from './weekly-income-chart';
 import CardStatusDistributionChart from './card-status-distribution';
+import type { IconName } from '../../side-bar/Icon';
 
 const Analytics: React.FC = () => {
   const analyticsData = {
@@ -29,8 +30,14 @@ const Analytics: React.FC = () => {
     cardStatusDistribution: { active: 1470, expired: 368, inactive: 245, blocked: 245, lost: 123 },
     weeklyIncome: [30, 90, 20, 100, 40]
   };
-
-  const cardData = [
+  interface CardItem {
+    title: string;
+    value: string | number;
+    percentage: string;
+    trendText: string;
+    icon: IconName;
+  }
+  const cardData: CardItem[] = [
     { title: 'Total Active Cards', value: analyticsData.totalActiveCards.toLocaleString(), percentage: '+9%', trendText: 'this month', icon: 'creditCardCheck' },
     { title: 'Total Personalized Cards', value: analyticsData.totalPersonalizedCards.toLocaleString(), percentage: '+8.5%', trendText: 'this month', icon: 'creditCardEdit' },
     { title: 'Today\'s Revenue', value: `₦${analyticsData.todaysRevenue}`, percentage: '+6%', trendText: 'vs yesterday', icon: 'bankNoteIcon' },

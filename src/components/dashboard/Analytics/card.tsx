@@ -1,8 +1,8 @@
 import React from 'react';
-import Icon from '../../side-bar/Icon';
+import Icon, { type IconName } from '../../side-bar/Icon';
 
 interface CardProps {
-    icon: string;
+  icon: IconName;
   title: string;
   value: string | number;
   percentage?: string;

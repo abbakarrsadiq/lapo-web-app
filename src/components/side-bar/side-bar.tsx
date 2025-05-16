@@ -1,7 +1,11 @@
 import logo from '../../assets/lapologo.svg';
-import Icon from './Icon';
+import Icon, { type IconName } from './Icon';
 
-const menuItems = [
+interface MenuItem {
+  name: string;
+  icon: IconName;
+}
+const menuItems: MenuItem[] = [
   { name: 'Branches', icon: 'branchesIcon' },
   { name: 'Roles', icon: 'rolesIcon' },
   { name: 'Users', icon: 'userIcon' },

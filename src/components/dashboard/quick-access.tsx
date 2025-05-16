@@ -1,7 +1,7 @@
 import React from 'react';
-import Icon from '../side-bar/Icon';
+import Icon, { type IconName } from '../side-bar/Icon';
 
-const QuickAccess: React.FC<{ quickAccessItems: { label: string; icon: string; badge?: number }[] }> = ({ quickAccessItems }) => {
+const QuickAccess: React.FC<{ quickAccessItems: { label: string; icon: IconName; badge?: number }[] }> = ({ quickAccessItems }) => {
   return (
     <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm" style={{ padding: '20px', background: '#FFFFFF', border: '1px solid #E2E2E2', borderRadius: '8px' }}>
       <h2

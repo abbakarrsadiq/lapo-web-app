@@ -60,8 +60,8 @@ const icons = {
   creditCardCheck,
   creditCardEdit
 };
-
-const Icon = ({ name, color = '#B0B7C3', size = 16 }: { name: keyof typeof icons, color?: string, size?: number }) => {
+export type IconName = keyof typeof icons;
+const Icon = ({ name, color = '#B0B7C3', size = 16 }: { name: IconName, color?: string, size?: number }) => {
   const IconComponent = icons[name];
   if (!IconComponent) {
     return <span style={{ width: `${size}px`, height: `${size}px`, backgroundColor: color, borderRadius: '50%' }} />;
